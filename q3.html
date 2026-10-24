@@ -8,36 +8,62 @@ Write an article using semantic markup, header, footer, main and section. In the
 Color the header with white text on a blue background, the footer with white text on a green background, the main portion with black text o a parchment colored background. 
 Make the nouns in the header and footer have a text weight of 600, while the rest of the text has a font-weight of 400.
     -->
-        
-</head>
-     <h1>Old-fashioned <span>Typesetting</span> and <span>Desktop Publishing</span></h1>
+
     <style>
-        body{
+        body {
             font-weight: 400;
         }
-        h1 {
-          color: white;
-          background-color: Blue;
+
+        header {
+            color: white;
+            background-color: blue;
+            font-weight: 400;
         }
-      </style>
-    
+
+        main {
+            color: black;
+            background-color: #F1E9D2;
+            font-weight: 400;
+        }
+
+        footer {
+            color: white;
+            background-color: green;
+            font-weight: 400;
+        }
+
+        h1, h2 {
+            font-weight: 400;
+        }
+
+        header span, footer span {
+            font-weight: 600;
+        }
+    </style>
+</head>
+
 <body>
-     <section id="1">
-        <h2>Old-fashioned typesetting involved manually arranging physical letters to create printed materials such as books and newspapers. This process was time-consuming, and making changes required a lot of effort. In comparison, desktop publishing uses computer programs such as Adobe InDesign to create and edit documents digitally. Users can easily change fonts, colours, images, and layouts without starting over. </p>
-          <style>
-        h2 {
-          color: black;
-          background-color: #F1E9D2;
-        }
-      </style>
+    <header>
+        <h1>Old-fashioned <span>Typesetting</span> and <span>Desktop Publishing</span></h1>
+    </header>
+
+    <main>
+        <article>
+            <section>
+                <h2>Old-fashioned Typesetting and Desktop Publishing</h2>
+                <p>Old-fashioned typesetting involved manually arranging physical letters to create printed materials such as books and newspapers. This process was time-consuming, and making changes required a lot of effort. In comparison, desktop publishing uses computer programs such as Adobe InDesign to create and edit documents digitally. Users can easily change fonts, colours, images, and layouts without starting over.</p>
+            </section>
+
+            <section>
+                <h2>HTML and CSS</h2>
+                <p>HTML and CSS are used to create webpages. HTML organizes the content using headings, paragraphs, and sections, while CSS controls the colours, fonts, and layouts. Unlike traditional typesetting and desktop publishing, HTML and CSS are mainly used for creating digital webpages.</p>
+            </section>
+        </article>
+    </main>
 
     <footer>
-           <p>Both <span>methods</span> focus on organizing <span>text</span> and creating readable <span>designs</span>, but <span>desktop publishing</span> is faster, easier, and more flexible than traditional <span>typesetting</span>.</p>
-      <style>
-        footer {
-          color: white;
-          background-color: Green;
-        }
-      </style>
+        <p>Both <span>methods</span> focus on organizing <span>text</span> and creating readable <span>designs</span>, but <span>desktop publishing</span> is faster, easier, and more flexible than traditional <span>typesetting</span>.</p>
+    </footer>
 </body>
-    </html>
+
+</html>
